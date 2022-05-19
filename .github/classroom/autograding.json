@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Setup",
+      "setup": "",
+      "run": "sudo apt-get update; sudo apt-get install git build-essential gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu gcc",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Make",
+      "setup": "",
+      "run": "make",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "test ping",
+      "setup": "",
+      "run": "./grade-lab-net \"nettest: ping\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "test single proc",
+      "setup": "",
+      "run": "./grade-lab-net \"nettest: single process\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "test multi proc",
+      "setup": "",
+      "run": "./grade-lab-net \"nettest: multi-process\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "test DNS",
+      "setup": "",
+      "run": "./grade-lab-net \"nettest: DNS\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
