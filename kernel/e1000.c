@@ -92,6 +92,8 @@ e1000_init(uint32 *xregs)
   regs[E1000_IMS] = (1 << 7); // RXDW -- Receiver Descriptor Write Back
 }
 
+// I cannot submit?
+
 int
 e1000_transmit(struct mbuf *m)
 {
